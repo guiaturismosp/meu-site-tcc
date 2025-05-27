@@ -9,58 +9,130 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #e0f7fa;
-      color: #333;
-      padding: 40px;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
     }
 
-    header {
-      background-color: #00796b;
+    /* Menu com cores do arco-íris */
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
       color: white;
-      padding: 20px;
+    }
+
+    nav a:nth-child(1) { background-color: #e40303; } /* vermelho */
+    nav a:nth-child(2) { background-color: #ff8c00; } /* laranja */
+    nav a:nth-child(3) { background-color: #ffed00; color: #000; } /* amarelo */
+    nav a:nth-child(4) { background-color: #008026; } /* verde */
+
+    header {
+      background-color: #004dff;
+      color: white;
+      padding: 40px;
       text-align: center;
     }
 
-    img {
-      width: 100%;
-      max-width: 600px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-
     section {
-      margin-top: 30px;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
     }
 
     h2 {
-      color: #00796b;
+      color: #750787; /* Roxo */
+    }
+
+    .pacote {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #fff;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e40303;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #750787;
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#quem-somos">Quem Somos</a>
+    <a href="#pacotes">Pacotes</a>
+    <a href="#contato">Fale Conosco</a>
+  </nav>
+
+  <header id="inicio">
     <h1>Descubra os roteiros pela cidade de SP</h1>
-    <p>Um Roteiro com muita História!</p>
+    <p>Um Roteiro com muita História e Orgulho! 🏳️‍🌈</p>
   </header>
 
-  <section>
-    <h2>Sobre o destino</h2>
-    <p>A cidade de São Paulo é conhecida por sua diversidade. Venha descobrir como o movimento LGBTQIA+ ganhou sua identidade!</p>
-    <img src="https://imprensa.spturis.com/wp-content/uploads/2024/05/cidadedesaopaulo.com-28a-parada-do-orgulho-lgbt-de-sao-paulo-parada-lgbt-110623-josecordeiro-0111-1024x683-1.jpg" alt="Parada do Orgulho LGBTQIA+ em São Paulo" />
+  <section id="quem-somos">
+    <h2>Quem Somos</h2>
+    <p>Somos estudantes que acreditam no poder do turismo como forma de valorização da cultura LGBTQIA+. Criamos esse guia para celebrar a diversidade e promover experiências incríveis em São Paulo.</p>
   </section>
 
-  <section>
-    <h2>O que fazer</h2>
-    <ul>
-      <li>🏳️‍🌈 Visite a Praça Roosevelt – ponto de encontro da cena alternativa e LGBTQIA+</li>
-      <li>📚 Conheça o Centro de Cultura e Memória do Movimento LGBTQIA+ na Galeria Metrópole</li>
-      <li>🎭 Assista a peças com temática queer no Teatro Oficina</li>
-      <li>🕺 Explore a história da Parada LGBTQIA+ na Avenida Paulista – uma das maiores do mundo!</li>
-      <li>🖼️ Visite exposições inclusivas no Museu da Diversidade Sexual (Estação República)</li>
-      <li>📖 Faça um tour guiado sobre a história LGBTQIA+ no centro histórico de SP</li>
-    </ul>
+  <section id="pacotes">
+    <h2>Pacotes Disponíveis</h2>
+
+    <div class="pacote">
+      <h3>🌈 Cultura e Diversidade em SP</h3>
+      <p><strong>Valor:</strong> R$ 299,00</p>
+      <p><strong>Data:</strong> 15/06/2025</p>
+      <p><strong>Descrição:</strong> Um passeio guiado pelos pontos históricos LGBTQIA+ da cidade.</p>
+      <a href="#" class="btn">Saiba mais</a>
+    </div>
+
+    <div class="pacote">
+      <h3>🎭 Arte e Expressão Queer</h3>
+      <p><strong>Valor:</strong> R$ 250,00</p>
+      <p><strong>Data:</strong> 22/06/2025</p>
+      <p><strong>Descrição:</strong> Visitas a teatros, exposições e centros culturais voltados à comunidade queer.</p>
+      <a href="#" class="btn">Selecionar</a>
+    </div>
+
+    <div class="pacote">
+      <h3>🏳️‍🌈 Parada LGBTQIA+ SP Experience</h3>
+      <p><strong>Valor:</strong> R$ 199,00</p>
+      <p><strong>Data:</strong> 07/07/2025</p>
+      <p><strong>Descrição:</strong> Viva a experiência completa da maior parada LGBTQIA+ da América Latina!</p>
+      <a href="#" class="btn">Saiba mais</a>
+    </div>
+
   </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <p>📧 Email: contato@turismolgbtsp.com.br</p>
+    <p>📱 WhatsApp: (11) 91234-5678</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Guia Turismo LGBTQIA+ em SP</p>
+  </footer>
 
 </body>
 </html>
