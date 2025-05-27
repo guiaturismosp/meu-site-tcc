@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Meta tag para verificação do Google Search Console -->
   <meta name="google-site-verification" content="EITaK2nLCF2E0buaZDnRf3TepK0l4ztZlnMZ_TjuoiY" />
   <title>Turismo LGBTQIA+ em São Paulo</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f0f8ff;
+      background-color: #fdfdfe;
       margin: 0;
       padding: 0;
     }
 
-    /* Menu com cores do arco-íris */
+    /* Menu com arco-íris sutil */
     nav {
       display: flex;
       justify-content: center;
@@ -28,26 +27,30 @@
       color: white;
     }
 
-    nav a:nth-child(1) { background-color: #e40303; } /* vermelho */
-    nav a:nth-child(2) { background-color: #ff8c00; } /* laranja */
-    nav a:nth-child(3) { background-color: #ffed00; color: #000; } /* amarelo */
-    nav a:nth-child(4) { background-color: #008026; } /* verde */
+    nav a:nth-child(1) { background-color: #e40303; }
+    nav a:nth-child(2) { background-color: #ff8c00; }
+    nav a:nth-child(3) { background-color: #ffed00; color: #000; }
+    nav a:nth-child(4) { background-color: #008026; }
 
+    /* Banner com imagem de fundo e overlay escuro */
     header {
-      background-color: #004dff;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('https://educacaoeterritorio.org.br/wp-content/uploads/2017/08/4946459957_2dcce111e7_z.jpg');
+      background-size: cover;
+      background-position: center;
       color: white;
-      padding: 40px;
+      padding: 60px 20px;
       text-align: center;
     }
 
     section {
       padding: 40px 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
 
     h2 {
-      color: #750787; /* Roxo */
+      color: #750787;
     }
 
     .pacote {
@@ -56,6 +59,7 @@
       padding: 20px;
       margin-bottom: 20px;
       background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
     .btn {
@@ -74,6 +78,14 @@
       text-align: center;
       padding: 20px;
     }
+
+    /* Imagem sutil na seção Quem Somos */
+    #quem-somos img {
+      width: 150px;
+      opacity: 0.7;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
   </style>
 </head>
 <body>
@@ -91,6 +103,7 @@
   </header>
 
   <section id="quem-somos">
+    <img src="https://resistenciaarcoiris.ensp.fiocruz.br/images/lgbt_PNG30.png" alt="Bandeira LGBTQIA+">
     <h2>Quem Somos</h2>
     <p>Somos estudantes que acreditam no poder do turismo como forma de valorização da cultura LGBTQIA+. Criamos esse guia para celebrar a diversidade e promover experiências incríveis em São Paulo.</p>
   </section>
@@ -136,5 +149,6 @@
 
 </body>
 </html>
+
 
 
